@@ -3,6 +3,7 @@ import img from "../../assets/nikesite.png";
 import img2 from "../../assets/lib.png";
 import img3 from "../../assets/schol.png";
 import img4 from "../../assets/usability.png";
+import img5 from "../../assets/fb-clone.png";
 import { Element } from "react-scroll";
 
 const Projects = () => {
@@ -37,7 +38,20 @@ const Projects = () => {
       link: "https://shoes-site-ui.netlify.app/",
       techonology: " REACT , REDUX , TAILWIND",
     },
-
+    {
+      img: img5,
+      name: "FB App Clone ",
+      dec: `This Facebook App Clone replicates the design and functionality of the Facebook platform, providing users with a familiar interface for exploring content,`,
+      topic: [
+        "User-friendly Interface",
+        "Modern UI Components:",
+        "Performance Optimization:",
+        "Other...",
+      ],
+      codeLink: "https://github.com/RajOdedara4u/Facebook_clone_tailwind_css",
+      link: "https://project-f4.netlify.app/",
+      techonology: " REACT , TAILWIND",
+    },
     {
       img: img3,
       name: "Appoiment Booking System ",

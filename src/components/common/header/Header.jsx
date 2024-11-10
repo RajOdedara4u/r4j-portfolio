@@ -31,9 +31,9 @@ const Header = () => {
       >
         <div className="w-[100%] px-3 mx-auto flex flex-row justify-between">
           <div className="  flex items-center font-bold font-serif max-[768px]:w-[50%]">
-            <h1 className=" text-[1.4rem] font-mono font-bold text-[#e2e2e2] flex gap-1 items-end">
-              WEB
-              <p className="font-semibold font-sans text-[1rem]">Developer</p>
+            <h1 className=" text-[0.7rem] md:text-[1rem] font-mono font-bold text-[#e2e2e2] flex justify-center items-center gap-2">
+              <div className="h-[0.6rem] w-[0.6rem] rounded-full bg-green-400 flex"></div>{" "}
+              Available For Work
             </h1>
           </div>
           <div className=" z-20 flex justify-center max-[1000px]:ml-20  ">
