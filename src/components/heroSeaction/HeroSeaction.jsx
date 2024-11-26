@@ -12,7 +12,7 @@ const HeroSeaction = () => {
           <h1 className=" text-[1rem] animate__animated animate__shakeX mtab:text-[1.5rem] llap:text-[2rem]  mb-[-10px] font-semibold text-[rgb(226,226,226)] ">
             Hello👋,
           </h1>
-          <h1 className="animate__animated animate__backInLeft text-[1.9rem] ld:text-[2rem] mtab:text-[2.5rem] ltab:text-[3rem] mtab:text-yellow-500 text-green-600 ltab:text-cyan-600 mlap:text-orange-500 llap:text-green-800  font-extrabold  ">
+          <h1 className="animate__animated animate__backInLeft text-[1.7rem] pt-2 md:pt-0 ld:text-[2rem] mtab:text-[2.5rem] ltab:text-[3rem] mtab:text-yellow-500 text-green-600 ltab:text-cyan-600 mlap:text-orange-500 llap:text-green-800  font-extrabold  ">
             I'm A Frontend
           </h1>
           <h1 className="animate__animated animate__backInLeft text-[2rem] mt-[-0.6rem]  ld:text-[2.5rem] ld:mt-[-0.9rem] mtab:text-[3rem] mtab:mt-[-1.3rem] ltab:text-[3.5rem] ltab:mt-[-1.6rem] llap:text-[4rem] text-[#DCCFED] font-extrabold tab:text-pink-200 mob:text-red-500 slap:text-yellow-300 ">

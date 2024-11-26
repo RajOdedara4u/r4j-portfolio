@@ -4,6 +4,7 @@ import img2 from "../../assets/lib.png";
 import img3 from "../../assets/schol.png";
 import img4 from "../../assets/usability.png";
 import img5 from "../../assets/fb-clone.png";
+import img6 from "../../assets/um-ss.jpg";
 import { Element } from "react-scroll";
 
 const Projects = () => {
@@ -22,7 +23,17 @@ const Projects = () => {
       link: "https://ecommerce-library.netlify.app/",
       codeLink: "https://github.com/RajOdedara4u/library-mern-front",
       techonology:
-        " REACT , EXPRESS , MONGO , NODE , ZOD , BCRYPTJS , JSONWEBTOKEN , REDUX , TAILWIND , OTHER...",
+        " REACT , EXPRESS , MONGO , NODE , ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX , TAILWIND , OTHER...",
+    },
+    {
+      img: img6,
+      name: "User Management System ",
+      dec: "This User Management System Allows You to login and singup and view and update the userrr profile with mern tech",
+      topic: ["Login / Singup", "View Profile", "Update Profile", "Other..."],
+      link: "https://um-task.netlify.app/",
+      codeLink: "https://github.com/RajOdedara4u/user-management-client",
+      techonology:
+        " REACT , EXPRESS , MONGO , NODE , ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX/THUNK , TAILWIND , OTHER...",
     },
     {
       img: img,
