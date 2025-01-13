@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import me from "../../assets/me2.jpg";
+import me from "../../assets/me.jpg";
 import resume from "../../assets/CV/resume.pdf";
 const HeroSeaction = () => {
   return (

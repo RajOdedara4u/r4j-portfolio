@@ -2,9 +2,10 @@ import SingleProject from "./SingleProject";
 import img from "../../assets/nikesite.png";
 import img2 from "../../assets/lib.png";
 import img3 from "../../assets/schol.png";
-import img4 from "../../assets/usability.png";
+import img4 from "../../assets/usabilityHub.jpg";
 import img5 from "../../assets/fb-clone.png";
 import img6 from "../../assets/um-ss.jpg";
+import img7 from "../../assets/chatApp.jpg";
 import { Element } from "react-scroll";
 
 const Projects = () => {
@@ -20,21 +21,28 @@ const Projects = () => {
         "Cart Option",
         "Other...",
       ],
-      link: "https://ecommerce-library.netlify.app/",
-      codeLink: "https://github.com/RajOdedara4u/library-mern-front",
+      link: "https://fullstack-bookstore.onrender.com",
+      codeLink: "https://github.com/RajOdedara4u/fullstack-bookstore",
       techonology:
-        " REACT , EXPRESS , MONGO , NODE , ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX , TAILWIND , OTHER...",
+        " MERN STACK, ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX , TAILWIND , OTHER...",
     },
     {
-      img: img6,
-      name: "User Management System ",
-      dec: "This User Management System Allows You to login and singup and view and update the userrr profile with mern tech",
-      topic: ["Login / Singup", "View Profile", "Update Profile", "Other..."],
-      link: "https://um-task.netlify.app/",
-      codeLink: "https://github.com/RajOdedara4u/user-management-client",
+      img: img7,
+      name: "Real Time Chat Application",
+      dec: "This chat application utilizes the MERN stack and Socket.IO, featuring messaging, user authentication, and theme options for experience.",
+      topic: [
+        "Login / Singup",
+        "Upload/Update Profile Picture",
+        "Send Message/Photo",
+        "Change Theme",
+        "Other...",
+      ],
+      link: "https://fullstake-chat-app.onrender.com",
+      codeLink: "https://github.com/RajOdedara4u/fullstake-chat-app",
       techonology:
-        " REACT , EXPRESS , MONGO , NODE , ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX/THUNK , TAILWIND , OTHER...",
+        " MERN STACK , SOCKET.IO , BCRYPTJS , JSON-WEBTOKEN , ZUSTAND , TAILWIND , OTHER...",
     },
+
     {
       img: img,
       name: "Nike Ecommerce Site ",
@@ -46,8 +54,18 @@ const Projects = () => {
         "Other...",
       ],
       codeLink: "https://github.com/RajOdedara4u/shoes-site",
-      link: "https://shoes-site-ui.netlify.app/",
+      link: "https://shoes-site-ui.netlify.app",
       techonology: " REACT , REDUX , TAILWIND",
+    },
+    {
+      img: img6,
+      name: "User Management System ",
+      dec: "This User Management System Allows You to login and singup and view and update the userrr profile with mern tech",
+      topic: ["Login / Singup", "View Profile", "Update Profile", "Other..."],
+      link: "https://um-task.netlify.app",
+      codeLink: "https://github.com/RajOdedara4u/user-management-client",
+      techonology:
+        " REACT , EXPRESS , MONGO , NODE , ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX/THUNK , TAILWIND , OTHER...",
     },
     {
       img: img5,
@@ -60,7 +78,7 @@ const Projects = () => {
         "Other...",
       ],
       codeLink: "https://github.com/RajOdedara4u/Facebook_clone_tailwind_css",
-      link: "https://project-f4.netlify.app/",
+      link: "https://project-f4.netlify.app",
       techonology: " REACT , TAILWIND",
     },
     {
@@ -74,7 +92,7 @@ const Projects = () => {
         "See Appoiment for Teacher",
       ],
       codeLink: "https://github.com/RajOdedara4u/Project2-AppoimentSystem",
-      link: "https://project2-appoiment-system.netlify.app/",
+      link: "https://project2-appoiment-system.netlify.app",
       techonology: " HTML , CSS , JS , FIREBASE",
     },
     {
@@ -88,7 +106,7 @@ const Projects = () => {
         "Other...",
       ],
       codeLink: "https://github.com/RajOdedara4u/Usability_hub_clone_html-css-",
-      link: "https://site1-clone.netlify.app/",
+      link: "https://site1-clone.netlify.app",
       techonology: " HTML , CSS",
     },
   ];
