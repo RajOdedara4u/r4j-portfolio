@@ -6,10 +6,25 @@ import img4 from "../../assets/usabilityHub.jpg";
 import img5 from "../../assets/fb-clone.png";
 import img6 from "../../assets/um-ss.jpg";
 import img7 from "../../assets/chatApp.jpg";
+import img8 from "../../assets/sqlcpic.jpg";
 import { Element } from "react-scroll";
 
 const Projects = () => {
   const ar = [
+    {
+      img: img,
+      name: "Nike Ecommerce Site ",
+      dec: `This Nike eCommerce site showcases a modern, responsive design, featuring a wide selection of shoes, easy navigation, and "Add to Cart" option.`,
+      topic: [
+        "Explore Shose's",
+        "Responsive design",
+        "Add to cart facality",
+        "Other...",
+      ],
+      codeLink: "https://github.com/RajOdedara4u/shoes-site",
+      link: "https://shoes-site-ui.netlify.app",
+      techonology: " REACT , REDUX , TAILWIND",
+    },
     {
       img: img2,
       name: "Ecommerce Library BookStore ",
@@ -42,20 +57,19 @@ const Projects = () => {
       techonology:
         " MERN STACK , SOCKET.IO , BCRYPTJS , JSON-WEBTOKEN , ZUSTAND , TAILWIND , OTHER...",
     },
-
     {
-      img: img,
-      name: "Nike Ecommerce Site ",
-      dec: `This Nike eCommerce site showcases a modern, responsive design, featuring a wide selection of shoes, easy navigation, and "Add to Cart" option.`,
+      img: img8,
+      name: "Student Management System ",
+      dec: "This Student Management System Is Developed For Learning Purpose It Allows To Add Delate And Update Student Data",
       topic: [
-        "Explore Shose's",
-        "Responsive design",
-        "Add to cart facality",
+        "Add New Student",
+        "Update Student",
+        "Delate Student",
         "Other...",
       ],
-      codeLink: "https://github.com/RajOdedara4u/shoes-site",
-      link: "https://shoes-site-ui.netlify.app",
-      techonology: " REACT , REDUX , TAILWIND",
+      link: "/",
+      codeLink: "https://github.com/RajOdedara4u/student-management-sql",
+      techonology: " REACT , EXPRESS , MYSQL , NODE , TAILWIND , OTHER...",
     },
     {
       img: img6,
