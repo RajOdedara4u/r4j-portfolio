@@ -1,7 +1,14 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <footer className="bg-[#3a205c]">
+      <footer data-aos="fade-up" className="bg-[#3a205c]">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 gap-4  flex md:mb-0">

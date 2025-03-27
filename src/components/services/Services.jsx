@@ -1,8 +1,14 @@
 import { Element } from "react-scroll";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <Element
+      data-aos="fade-up"
       name="services"
       className="flex flex-col  w-full justify-between  bg-[#44266c] py-5 ltab:py-10"
     >

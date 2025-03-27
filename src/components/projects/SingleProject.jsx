@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const SingleProject = ({
   v,
   name,
@@ -8,11 +11,15 @@ const SingleProject = ({
   codeLink,
   techonology,
 }) => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   let a = "flex-row-reverse";
   let b = "flex-row";
   return (
     <>
       <div
+        data-aos="fade-up"
         className={`w-[100%] gap-3 llap:gap-2 max-[1244px]:py-5   flex  max-[1244px]:flex-col ${
           v % 2 === 0 ? b : a
         }`}
