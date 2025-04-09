@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
 import me from "../../assets/me.jpg";
 import resume from "../../assets/CV/resume.pdf";
-const HeroSeaction = () => {
+const LandingPage = () => {
   return (
     <>
       <Element
@@ -168,4 +168,4 @@ const HeroSeaction = () => {
   );
 };
 
-export default HeroSeaction;
+export default LandingPage;
