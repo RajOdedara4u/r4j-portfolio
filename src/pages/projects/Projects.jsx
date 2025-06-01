@@ -7,10 +7,20 @@ import img5 from "../../assets/fb-clone.png";
 import img6 from "../../assets/um-ss.jpg";
 import img7 from "../../assets/chatApp.jpg";
 import img8 from "../../assets/sqlcpic.jpg";
+import sindhalf from "../../assets/sindhalf.jpg";
 import { Element } from "react-scroll";
 
 const Projects = () => {
   const ar = [
+    {
+      img: sindhalf,
+      name: "Sindhal Finance Site",
+      dec: "Worked For a startup to develope his own website to use for get data of user to run ads and collect data",
+      topic: ["Login / Singup", "Animations", "Admin Panel", "Other..."],
+      link: "https://sindhal-finance.netlify.app/",
+      codeLink: "https://github.com/RajOdedara4u/Sindhal-Finance-Site",
+      techonology: " MERN , JSON-WEBTOKEN, AOS , TAILWIND , OTHER...",
+    },
     {
       img: img,
       name: "Nike Ecommerce Site ",
@@ -41,6 +51,7 @@ const Projects = () => {
       techonology:
         " MERN STACK, ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX , TAILWIND , OTHER...",
     },
+
     {
       img: img7,
       name: "Real Time Chat Application",
