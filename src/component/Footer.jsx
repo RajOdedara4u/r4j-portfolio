@@ -1,14 +1,7 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
 const Footer = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   return (
     <>
-      <footer data-aos="fade-up" className="bg-[#3a205c]">
+      <footer className="bg-[#3a205c]">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 gap-4  flex md:mb-0">
@@ -77,10 +70,10 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold uppercase  text-white">
                   Resources
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className="  text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
                       href="https://github.com/RajOdedara4u"
@@ -100,10 +93,10 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold uppercase  text-white">
                   Follow us
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className=" text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
                       href="https://www.youtube.com/@Raj_odedara4u"
@@ -123,10 +116,10 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold uppercase  text-white">
                   contact
                 </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <ul className="  text-gray-400 font-medium">
                   <li className="mb-4">
                     <a href="tel:+917069439842" className="hover:underline">
                       +91 706 943 9842
@@ -144,19 +137,19 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <hr className="my-6 sm:mx-auto  border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2024 Raj . All Rights Reserved.
+            <span className="text-sm sm:text-center  text-gray-400">
+              © 2025 Raj . All Rights Reserved.
             </span>
             <div className="flex mt-4 sm:justify-center items-center sm:mt-0">
               <a
                 href="https://www.instagram.com/save_point4u/"
-                className=" dark:hover:text-white"
+                className="  hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 fill-gray-500 dark:hover:fill-white"
+                  className="w-4 fill-gray-500  hover:fill-white"
                   viewBox="0 0 2476 2476"
                   id="instagram"
                 >
@@ -166,11 +159,11 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.youtube.com/@Raj_odedara4u"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                className="text-gray-500  hover:text-white ms-5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 fill-gray-500 dark:hover:fill-white"
+                  className="w-5 fill-gray-500  hover:fill-white"
                   xmlSpace="preserve"
                   viewBox="0 0 16 16"
                   id="youtube"
@@ -185,7 +178,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://x.com/RAJBHAI4955"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                className="text-gray-500  hover:text-white ms-5"
               >
                 <svg
                   className="w-4 h-4"
@@ -204,7 +197,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://github.com/RajOdedara4u"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+                className="text-gray-500   hover:text-white ms-5"
               >
                 <svg
                   className="w-4 h-4"
@@ -223,7 +216,7 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/in/raj-maher" className=" ms-5">
                 <svg
-                  className="fill-gray-500 hover:fill-gray-900 dark:hover:fill-white w-4"
+                  className="fill-gray-500   hover:fill-white w-4"
                   xmlns="http://www.w3.org/2000/svg"
                   enableBackground="new 0 0 128 128"
                   viewBox="0 0 128 128"

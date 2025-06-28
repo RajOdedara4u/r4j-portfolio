@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import cartoon from "../../assets/cartoon.png";
+import cartoon from "../../assets/cartoon.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

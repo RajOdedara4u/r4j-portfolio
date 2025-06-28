@@ -115,11 +115,11 @@ const Header = () => {
           <div className="flex w-full my-2  justify-evenly items-center">
             <a
               href="https://www.instagram.com/save_point4u/"
-              className=" dark:hover:text-white"
+              className="  :hover:text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 fill-gray-500 dark:hover:fill-white"
+                className="w-6 fill-gray-500  :hover:fill-white"
                 viewBox="0 0 2476 2476"
                 id="instagram"
               >
@@ -129,11 +129,11 @@ const Header = () => {
             </a>
             <a
               href="https://www.youtube.com/@Raj_odedara4u"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-500 hover:text-gray-900  :hover:text-white ms-5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-7 fill-gray-500 dark:hover:fill-white"
+                className="w-7 fill-gray-500  :hover:fill-white"
                 xmlSpace="preserve"
                 viewBox="0 0 16 16"
                 id="youtube"
@@ -148,7 +148,7 @@ const Header = () => {
             </a>
             <a
               href="https://x.com/RAJBHAI4955"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-500 hover:text-gray-900  :hover:text-white ms-5"
             >
               <svg
                 className="w-6"
@@ -167,7 +167,7 @@ const Header = () => {
             </a>
             <a
               href="https://github.com/RajOdedara4u"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-500 hover:text-gray-900  :hover:text-white ms-5"
             >
               <svg
                 className="w-6"
@@ -186,7 +186,7 @@ const Header = () => {
             </a>
             <a href="https://www.linkedin.com/in/raj-maher" className=" ms-5">
               <svg
-                className="fill-gray-500 hover:fill-gray-900 dark:hover:fill-white w-6"
+                className="fill-gray-500 hover:fill-gray-900  :hover:fill-white w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 enableBackground="new 0 0 128 128"
                 viewBox="0 0 128 128"
