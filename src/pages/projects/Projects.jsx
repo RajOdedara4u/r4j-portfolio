@@ -20,7 +20,7 @@ const Projects = () => {
                 v={index}
                 img={obj.img}
                 name={obj.name}
-                dec={obj.dec}
+                desc={obj.desc}
                 topic={obj.topic}
                 link={obj.link}
                 codeLink={obj.codeLink}

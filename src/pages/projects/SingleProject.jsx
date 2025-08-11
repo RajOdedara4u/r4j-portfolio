@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 const SingleProject = ({
   v,
   name,
-  dec,
+  desc,
   topic,
   img,
   link,
@@ -66,7 +66,7 @@ const SingleProject = ({
             </div>
           </div>
           <div className=" text-gray-800 pt-1">
-            {dec}
+            {desc}
             <ul className="px-2  text-black  mt-3">
               {topic.map((obj, index) => {
                 return (

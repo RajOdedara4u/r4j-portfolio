@@ -21,10 +21,10 @@ const About = () => {
               About Me
             </h2>
             <p className="pt-2  px-3 text-[#DCCFED] text-[0.9rem] md:text-[1rem]">
-              Hello! 👋 I’m Raj Odedara from Gujarat, India and just complated
+              Hello! 👋 I’m Raj Odedara from Gujarat, India and recently complated
               bachelor’s degree in Computer Applications and Actively Looking
-              For Intership+Job opportunity, Need your support To grow in this
-              field. I specialize in the React and fullStake Development and
+              For Job opportunity as a fresher, Need your support To grow in this
+              field. I specialize in the React and have knowlage about fullStake Development and
               other technologies. Always eager to learn and take on new
               challenges, I’m excited to grow and contribute to the tech world.
               🚀

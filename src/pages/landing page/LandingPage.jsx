@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import me from "../../assets/me.jpg";
-import resume from "../../assets/CV/resume.pdf";
+import resume from "../../assets/CV/react_developer_resume.pdf";
 const LandingPage = () => {
   return (
     <>
