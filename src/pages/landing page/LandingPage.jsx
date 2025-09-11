@@ -13,7 +13,7 @@ const LandingPage = () => {
             Hello👋,
           </h1>
           <h1 className="animate__animated animate__backInLeft text-[1.7rem] pt-2 md:pt-0 ld:text-[2rem] mtab:text-[2.5rem] ltab:text-[3rem] mtab:text-yellow-500 text-green-600 ltab:text-cyan-600 mlap:text-orange-500 llap:text-green-800  font-extrabold  ">
-            I'm A Frontend
+            I'm A Mern Stack
           </h1>
           <h1 className="animate__animated animate__backInLeft text-[2rem] mt-[-0.6rem]  ld:text-[2.5rem] ld:mt-[-0.9rem] mtab:text-[3rem] mtab:mt-[-1.3rem] ltab:text-[3.5rem] ltab:mt-[-1.6rem] llap:text-[4rem] text-[#DCCFED] font-extrabold tab:text-pink-200 mob:text-red-500 slap:text-yellow-300 ">
             Web Developer

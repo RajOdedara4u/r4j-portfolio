@@ -33,13 +33,13 @@ const Services = () => {
                 ></path>
               </svg>
             </span>
-            <div>
-              <h3 className="font-semibold text-xl "> Web Desiging</h3>
-              <p className="mt-1 text-gray-500">
-                Figma or other plateforms enables me to create design prototypes
-                into functional web applications, efficiency in designing.
-              </p>
-            </div>
+           <div>
+  <h3 className="font-semibold text-xl">Frontend Development</h3>
+  <p className="mt-1 text-gray-500">
+    Am master in React.js and build responsive, interactive, and user-friendly
+    interfaces with reusable components and optimized performance.
+  </p>
+</div>
           </div>
 
           <div className="flex gap-4 rounded-lg px-6 py-5 bg-[#DCCFED] items-start flex-col ">
@@ -58,14 +58,13 @@ const Services = () => {
                 ></path>
               </svg>
             </span>
-            <div>
-              <h3 className="font-semibold text-xl ">Web Devlopement</h3>
-              <p className="mt-1 text-gray-500">
-                in web devlopment allows me to create visually engaging and
-                user-friendly websites, focusing on layout, color, and
-                responsive.
-              </p>
-            </div>
+           <div>
+  <h3 className="font-semibold text-xl">Backend Development</h3>
+  <p className="mt-1 text-gray-500">
+    Have knowledge of Node.js and Express.js to create secure, scalable APIs
+    and backend systems for modern web applications.
+  </p>
+</div>
           </div>
 
           <div className="flex gap-4 rounded-lg px-6 py-5 bg-[#DCCFED] items-start flex-col ">
@@ -84,13 +83,13 @@ const Services = () => {
                 ></path>
               </svg>
             </span>
-            <div>
-              <h3 className="font-semibold text-xl ">Figma To Code</h3>
-              <p className="mt-1 text-gray-500">
-                in Figma enables me to transform design prototypes into
-                functional web applications, efficiency in development.
-              </p>
-            </div>
+           <div>
+  <h3 className="font-semibold text-xl">Database Management</h3>
+  <p className="mt-1 text-gray-500">
+    Skilled in MongoDB for designing schemas, managing queries, and ensuring
+    efficient data storage for scalable applications.
+  </p>
+</div>
           </div>
         </div>
       </div>

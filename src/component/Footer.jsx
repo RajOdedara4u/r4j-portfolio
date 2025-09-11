@@ -107,7 +107,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/save_point4u/"
+                      href="https://www.instagram.com/pixel2profit_4u/"
                       className="hover:underline"
                     >
                       Instagram
@@ -144,7 +144,7 @@ const Footer = () => {
             </span>
             <div className="flex mt-4 sm:justify-center items-center sm:mt-0">
               <a
-                href="https://www.instagram.com/save_point4u/"
+                href="https://www.instagram.com/pixel2profit_4u/"
                 className="  hover:text-white"
               >
                 <svg

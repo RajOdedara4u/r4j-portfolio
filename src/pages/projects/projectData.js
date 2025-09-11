@@ -37,10 +37,13 @@ const projectData = [
     img: adi,
     name: "Folk Singer Website",
     desc: "Worked For a Folk Singer to Showcase their work and information about singer",
-    topic: ["Login / Singup", "Animations", "Admin Panel", "Other..."],
+    topic: [ 
+      "User-friendly Interface",
+      "Modern UI Components:",
+      "Animations"],
     link: "https://aaditya-ranavaya.netlify.app/",
-    codeLink: "https://github.com/RajOdedara4u/r4j-portfolio",
-    techonology: " MERN , JSON-WEBTOKEN, AOS , TAILWIND , OTHER...",
+    codeLink: "https://github.com/RajOdedara4u/aaditya-ranavaya-site",
+    techonology: "REACT, AOS, TAILWIND, OTHER...",
   },
   {
     img: img,
@@ -57,15 +60,6 @@ const projectData = [
     techonology: " REACT , REDUX , TAILWIND",
   },
   {
-    img: img6,
-    name: "Dashboard Figma Design To Code",
-    desc: "A Fully Responsive Site Converted into code from Figma Design To HTML, CSS Code Which Shows Project Data",
-    topic: ["Login / Singup", "View Profile", "Update Profile", "Other..."],
-    link: "https://dashboard-figma-task.netlify.app/",
-    codeLink: "https://github.com/RajOdedara4u/dahsboardTask",
-    techonology: "HTML, CSS, OTHER...",
-  },
-  {
     img: img5,
     name: "FaceBook Clone ",
     desc: `This Facebook App Clone replicates the design and functionality of the Facebook platform, providing users with a familiar interface for exploring content,`,
@@ -78,6 +72,15 @@ const projectData = [
     codeLink: "https://github.com/RajOdedara4u/Facebook_clone_tailwind_css",
     link: "https://project-f4.netlify.app",
     techonology: " REACT , TAILWIND",
+  },
+    {
+    img: img6,
+    name: "Dashboard Figma Design To Code",
+    desc: "A Fully Responsive Site Converted into code from Figma Design To HTML, CSS Code Which Shows Project Data",
+    topic: ["Only Html,css","Responsive design", "Other..."],
+    link: "https://dashboard-figma-task.netlify.app/",
+    codeLink: "https://github.com/RajOdedara4u/dahsboardTask",
+    techonology: "HTML, CSS, OTHER...",
   },
   {
     img: img3,
