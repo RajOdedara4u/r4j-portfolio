@@ -1,15 +1,15 @@
-import img from "../../assets/nikesite.png";
-import img2 from "../../assets/lib.png";
-import img3 from "../../assets/schol.png";
-import img4 from "../../assets/usabilityHub.jpg";
-import img5 from "../../assets/fb-clone.png";
-import img6 from "../../assets/dashboard.jpg";
-import sindhalf from "../../assets/sindhalf.jpg";
-import adi from "../../assets/adi.jpg";
+import p1 from "../../assets/p1.png";
+import p2 from "../../assets/p2.jpg";
+import p3 from "../../assets/p3.jpg";
+import p4 from "../../assets/p4.png";
+import p5 from "../../assets/p5.png";
+import p6 from "../../assets/p6.jpg";
+import p7 from "../../assets/p7.png";
+import p8 from "../../assets/p8.jpg";
 
 const projectData = [
   {
-    img: img2,
+    img: p1,
     name: "Ecommerce Library BookStore ",
     desc: "This eCommerce Bookstore utilizes the MERN stack, featuring an admin panel for product management, CRUD operations, user login/signup.",
     topic: [
@@ -25,7 +25,7 @@ const projectData = [
       " MERN STACK, ZOD , BCRYPTJS , JSON-WEBTOKEN , REDUX , TAILWIND , OTHER...",
   },
   {
-    img: sindhalf,
+    img: p2,
     name: "Sindhal Finance Site",
     desc: "Worked For a startup to develope his own website to use for get data of user to run ads and collect data",
     topic: ["Login / Singup", "Animations", "Admin Panel", "Other..."],
@@ -34,7 +34,7 @@ const projectData = [
     techonology: " MERN , JSON-WEBTOKEN, AOS , TAILWIND , OTHER...",
   },
    {
-    img: adi,
+    img: p3,
     name: "Folk Singer Website",
     desc: "Worked For a Folk Singer to Showcase their work and information about singer",
     topic: [ 
@@ -46,7 +46,7 @@ const projectData = [
     techonology: "REACT, AOS, TAILWIND, OTHER...",
   },
   {
-    img: img,
+    img: p4,
     name: "Nike Ecommerce Site ",
     desc: `This Nike eCommerce site showcases a modern, responsive design, featuring a wide selection of shoes, easy navigation, and "Add to Cart" option.`,
     topic: [
@@ -60,7 +60,7 @@ const projectData = [
     techonology: " REACT , REDUX , TAILWIND",
   },
   {
-    img: img5,
+    img: p5,
     name: "FaceBook Clone ",
     desc: `This Facebook App Clone replicates the design and functionality of the Facebook platform, providing users with a familiar interface for exploring content,`,
     topic: [
@@ -74,7 +74,7 @@ const projectData = [
     techonology: " REACT , TAILWIND",
   },
     {
-    img: img6,
+    img: p6,
     name: "Dashboard Figma Design To Code",
     desc: "A Fully Responsive Site Converted into code from Figma Design To HTML, CSS Code Which Shows Project Data",
     topic: ["Only Html,css","Responsive design", "Other..."],
@@ -83,7 +83,7 @@ const projectData = [
     techonology: "HTML, CSS, OTHER...",
   },
   {
-    img: img3,
+    img: p7,
     name: "Appoiment Booking System ",
     desc: "This Booking System includes an admin panel, user login/signup, appointment booking, and a view for teachers' schedules.",
     topic: [
@@ -97,7 +97,7 @@ const projectData = [
     techonology: " HTML , CSS , JS , FIREBASE",
   },
   {
-    img: img4,
+    img: p8,
     name: "Usability hub site clone",
     desc: "This Site have fully responsive design which looks greate on any device and include html and css only for responsive.",
     topic: [

@@ -114,7 +114,7 @@ const Header = () => {
 
           <div className="flex w-full my-2  justify-evenly items-center">
             <a
-              href="https://www.instagram.com/save_point4u/"
+              href="https://www.instagram.com/pixel2profit_4u/"
               className="  :hover:text-white"
             >
               <svg

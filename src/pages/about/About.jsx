@@ -20,14 +20,15 @@ const About = () => {
             <h2 className="text-3xl px-2 font-serif font-extrabold text-[#DCCFED] sm:text-4xl">
               About Me
             </h2>
-            <p className="pt-2  px-3 text-[#DCCFED] text-[0.9rem] md:text-[1rem]">
-              Hello! 👋 I’m Raj Odedara from Gujarat, India and recently complated
-              bachelor’s degree in Computer Applications and Actively Looking
-              For Job opportunity as a fresher, Need your support To grow in this
-              field. I specialize in the React and have knowlage about fullStake Development and
-              other technologies. Always eager to learn and take on new
-              challenges, I’m excited to grow and contribute to the tech world.
-              🚀
+            <p className="py-5  px-3 text-[#DCCFED] text-[0.9rem] md:text-[1rem]">
+             Hello! 👋 I’m Raj Odedara from Gujarat, India.
+I have completed my Bachelor’s degree in Computer Applications and currently working as a Web Developer with hands-on experience in the MERN stack, React.js, and modern web technologies.
+<br />
+<br />
+My journey started with an internship where I built real-time applications, followed by a trainee role, and now a full-time developer position. These experiences have strengthened my skills in frontend and backend development, API integration, and building scalable web applications.
+<br />
+<br />
+I’m always eager to learn, take on new challenges, and contribute to impactful projects in the tech world. 🚀
             </p>
           </div>
           <div className="mt-3 md:mt-0">

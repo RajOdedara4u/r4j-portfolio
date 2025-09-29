@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Projects from "./pages/projects/Projects";
 import Skill from "./pages/skills/Skill";
+import ExperienceSection from "./pages/exprience/ExperienceSection";
 import "animate.css";
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <LandingPage />
       <About />
+      <ExperienceSection />
       <Skill />
       <Services />
       <Projects />

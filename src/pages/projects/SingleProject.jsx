@@ -24,7 +24,7 @@ const SingleProject = ({
           v % 2 === 0 ? b : a
         }`}
       >
-        <div className=" w-full llap:w-[60%] max-[1244px]:my-0 my-[50px] mtab:px-2 flex mx-auto">
+        <div className=" w-full min-w-[50%] llap:w-[60%] max-[1244px]:my-0 my-[50px] mtab:px-2 flex mx-auto">
           <img src={img} className="w-full rounded-lg" />
         </div>
         <div className="bg-[#DCCFED]  my-[50px] max-[1244px]:my-0 mtab:mx-3 max-[1244px]:max-w-[100%]  p-4 rounded-lg  ">
