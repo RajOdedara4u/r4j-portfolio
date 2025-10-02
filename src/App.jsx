@@ -13,7 +13,6 @@ const App = () => {
       <Header />
       <LandingPage />
       <About />
-      <ExperienceSection />
       <Skill />
       <Services />
       <Projects />
