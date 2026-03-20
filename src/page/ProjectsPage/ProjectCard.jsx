@@ -1,3 +1,5 @@
+import { ArrowIcon, ArrowIcon2, CodeIcon } from "@/components/Icons/Icons";
+import Image from "next/image";
 const ProjectCard = ({ project, index }) => {
   return (
     <article
@@ -8,11 +10,7 @@ const ProjectCard = ({ project, index }) => {
       {/* Image */}
       <div className={"relative h-44 sm:h-48 shrink-0 overflow-hidden"}>
         <div className={"absolute inset-0 bg-gradient-to-br from-[#6b9fff]/20 via-transparent to-[#f472b6]/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300"} />
-        <img
-          src={project.img.src ?? project.img}
-          alt={project.name}
-          className={"h-full w-full object-cover transform group-hover:scale-110 transition-transform duration-500"}
-        />
+        <Image src={project.img} alt={project.name} fill className="object-cover" />
 
         {/* Top-right badge */}
         <div className={"absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-2xl bg-black/60 backdrop-blur text-[11px] font-semibold text-white"}>
@@ -65,57 +63,31 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Links — always at bottom */}
         <div className={"mt-auto flex items-center justify-between gap-3 pt-2 border-t border-[#e5e7eb]"}>
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noreferrer"
-          className={"inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-[#1a1a2e] group-hover:text-[#6b9fff] transition-colors"}
-        >
-          View Live
-          <span className={"inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#6b9fff]/10 text-[#6b9fff] group-hover:bg-[#6b9fff] group-hover:text-white transition-colors"}>
-            ↗
-          </span>
-        </a>
-
-        <a
-          href={project.codeLink}
-          target="_blank"
-          rel="noreferrer"
-          className={"inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-[#4a4a6a] hover:text-[#a78bfa] transition-colors"}
-        >
-          View Code
-          <svg
-            className={"w-3.5 h-3.5"}
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            className={"inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-[#1a1a2e] group-hover:text-[#6b9fff] transition-colors"}
           >
-            <path
-              d="M8 17L4 12L8 7"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M16 7L20 12L16 17"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M13 5L11 19"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </a>
+            View Live
+            <span className={"inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#6b9fff]/10 text-[#6b9fff] p-[3px] group-hover:bg-[#6b9fff] group-hover:text-white transition-colors"}>
+             <ArrowIcon2 />
+            </span>
+          </a>
+
+          <a
+            href={project.codeLink}
+            target="_blank"
+            rel="noreferrer"
+            className={"inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-[#4a4a6a] hover:text-[#a78bfa] transition-colors"}
+          >
+            View Code
+           <CodeIcon />
+          </a>
+        </div>
       </div>
-    </div>
-  </article>
-)}
+    </article>
+  )
+}
 
 export default ProjectCard

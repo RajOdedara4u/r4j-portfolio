@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { ArrowIcon } from "../Icons/Icons";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -28,7 +29,6 @@ export default function Header() {
 
   return (
     <header  
-    data-aos="fade-down"
     className={"fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4 sm:px-6"}>
       <nav
         className={`w-full max-w-5xl flex items-center justify-between px-5 py-3 rounded-[20px] transition-all duration-300
@@ -71,28 +71,14 @@ export default function Header() {
           ))}
         </ul>
 
-        {/* Desktop CTA */}
         <Link
           href="/contact"
           className={"hidden md:inline-flex items-center gap-1.5 px-5 py-2 rounded-2xl text-sm font-semibold text-white bg-gradient-to-r from-[#6b9fff] to-[#a78bfa] shadow-[0_6px_20px_rgba(107,159,255,0.4)] hover:-translate-y-0.5 hover:shadow-[0_10px_28px_rgba(107,159,255,0.5)] transition-all duration-200"}
         >
           Hire Me
-          <svg
-            className={"w-3.5 h-3.5"}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
+         <ArrowIcon />
         </Link>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className={"md:hidden flex flex-col gap-1.5 p-2"}

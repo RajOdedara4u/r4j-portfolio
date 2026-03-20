@@ -1,3 +1,5 @@
+import {ArrowIcon2} from "../../components/Icons/Icons"
+
 const services = [
   {
     title: "Custom Web Application Development",
@@ -109,8 +111,7 @@ const ServicesPage = () => {
     <section
       id="services"
       className={"relative w-full min-h-screen bg-[#f8f9fc] px-4 sm:px-6 lg:px-8 py-24"}
-      data-aos="fade-up"
-    >
+          >
       {/* Soft background matching portfolio theme */}
       <div
         className={"pointer-events-none absolute inset-0 opacity-80"}
@@ -126,19 +127,19 @@ const ServicesPage = () => {
       <div className={"relative z-10 max-w-6xl mx-auto flex flex-col gap-16"}>
         {/* Hero */}
         <header className={"flex flex-col items-center text-center gap-4"}>
-          <span className={"inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-white/70 text-xs font-semibold text-[#6b9fff] tracking-[0.2em] uppercase shadow-[0_4px_16px_rgba(107,159,255,0.12),inset_0_1px_0_rgba(255,255,255,1)]"}>
+          <span  data-aos="fade-up" className={"inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-white/70 text-xs font-semibold text-[#6b9fff] tracking-[0.2em] uppercase shadow-[0_4px_16px_rgba(107,159,255,0.12),inset_0_1px_0_rgba(255,255,255,1)]"}>
             Services I Offer
           </span>
 
-          <h1 className={"text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#1a1a2e]"}>
-            Build modern{" "}
+          <h1  data-aos="fade-up" className={"text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#1a1a2e]"}>
+          Build.
             <span className={"bg-gradient-to-r from-[#6b9fff] via-[#a78bfa] to-[#f472b6] bg-clip-text text-transparent"}>
-              web experiences
+            Launch.
             </span>{" "}
-            that actually ship.
+            Scale.
           </h1>
 
-          <p className={"max-w-2xl text-sm sm:text-base text-[#4a4a6a] font-medium"}>
+          <p data-aos="fade-up"  className={"max-w-2xl text-sm sm:text-base text-[#4a4a6a] font-medium"}>
             I help startups, founders, and businesses design, build, and launch
             modern web applications using{" "}
             <span className={"font-semibold text-[#6b9fff]"}>
@@ -147,14 +148,10 @@ const ServicesPage = () => {
             . From idea to deployment, I focus on performance, scalability, and
             clean user experiences.
           </p>
-
-          <p className={"text-xs sm:text-sm text-[#6b7280]"}>
-            Let&apos;s turn your idea into a reliable, production-ready product.
-          </p>
         </header>
 
         {/* Services Grid */}
-        <section className={"flex flex-col gap-8"}>
+        <section data-aos="fade-up"  className={"flex flex-col gap-8"}>
           <div className={"flex items-center justify-between gap-4 flex-wrap"}>
             <h2 className={"text-xl sm:text-2xl font-extrabold text-[#1a1a2e]"}>
               Services for serious products
@@ -269,7 +266,7 @@ const ServicesPage = () => {
                 className={"inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold text-[#1a1a2e] bg-white shadow-[0_12px_40px_rgba(15,23,42,0.35)] hover:-translate-y-0.5 hover:shadow-[0_18px_60px_rgba(15,23,42,0.45)] transition-all duration-200"}
               >
                 Start Your Project
-                <span className={"text-lg"}>↗</span>
+               <ArrowIcon2 />
               </a>
 
               <a
