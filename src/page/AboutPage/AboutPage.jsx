@@ -7,7 +7,6 @@ export default function AboutPage() {
       className={"relative min-h-screen w-full bg-[#f8f9fc] px-4 sm:px-6 lg:px-8"}
       data-aos="fade-up"
     >
-      {/* soft background to match theme */}
       <div
         className={"pointer-events-none absolute inset-0 opacity-80"}
         style={{
@@ -21,7 +20,6 @@ export default function AboutPage() {
 
       <div className={"relative z-10 max-w-6xl mx-auto flex items-center min-h-screen py-16"}>
         <div className={"grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 w-full items-center"}>
-          {/* LEFT: text (half screen on desktop) */}
           <div className={"flex flex-col gap-5"} data-aos="fade-right">
             <span className={"inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-white/70 text-xs font-semibold text-[#6b9fff] tracking-[0.2em] uppercase shadow-[0_4px_16px_rgba(107,159,255,0.12),inset_0_1px_0_rgba(255,255,255,1)] w-fit"}>
               About Me
@@ -42,9 +40,7 @@ I’m passionate about learning new technologies, solving complex problems, and 
           
           </div>
 
-          {/* RIGHT: photo (half screen on desktop) */}
           <div className={"relative flex items-center justify-center"} data-aos="fade-left">
-            {/* glow */}
             <div className={"absolute inset-0 blur-3xl opacity-60 bg-gradient-to-tr from-[#6b9fff] via-[#a78bfa] to-[#f472b6]"} />
 
             <div className={"relative max-w-sm w-full rounded-[2rem] bg-white border border-white/80 shadow-[0_18px_60px_rgba(15,23,42,0.22)] overflow-hidden"}>
@@ -57,7 +53,6 @@ I’m passionate about learning new technologies, solving complex problems, and 
                   className={"object-cover"}
                 />
 
-                {/* badge */}
                 <div className={"absolute top-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-2xl bg-black/60 backdrop-blur text-[11px] font-semibold text-white"}>
                   <span className={"relative flex h-2 w-2"}>
                     <span className={"animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4ade80] opacity-75"} />

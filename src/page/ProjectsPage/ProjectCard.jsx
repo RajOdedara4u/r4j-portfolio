@@ -7,19 +7,16 @@ const ProjectCard = ({ project, index }) => {
       className={"group relative flex flex-col overflow-hidden rounded-3xl bg-white border border-white/80 shadow-[0_14px_40px_rgba(15,23,42,0.06),0_4px_16px_rgba(148,163,184,0.18)] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(15,23,42,0.10)] transition-all duration-200 h-full"}
       data-aos="fade-up"
     >
-      {/* Image */}
       <div className={"relative h-44 sm:h-48 shrink-0 overflow-hidden"}>
         <div className={"absolute inset-0 bg-gradient-to-br from-[#6b9fff]/20 via-transparent to-[#f472b6]/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300"} />
         <Image src={project.img} alt={project.name} fill className="object-cover" />
 
-        {/* Top-right badge */}
         <div className={"absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-2xl bg-black/60 backdrop-blur text-[11px] font-semibold text-white"}>
           <span className={"inline-block h-1.5 w-1.5 rounded-full bg-[#4ade80]"} />
           Live Project
         </div>
       </div>
 
-      {/* Content — flex-1 so links stay at bottom */}
       <div className={"flex flex-1 flex-col gap-4 p-4 sm:p-5 min-h-0"}>
         <div className={"min-h-0"}>
           <h3 className={"text-base sm:text-lg font-extrabold text-[#1a1a2e] mb-1"}>
@@ -30,7 +27,6 @@ const ProjectCard = ({ project, index }) => {
           </p>
         </div>
 
-        {/* Tech */}
         <div className={"flex flex-wrap gap-1.5"}>
           {project.techonology
             .split(",")
@@ -46,7 +42,6 @@ const ProjectCard = ({ project, index }) => {
             ))}
         </div>
 
-        {/* Topics */}
         {project.topic && project.topic.length > 0 && (
           <div className={"flex flex-wrap gap-1.5"}>
             {project.topic.map((item) => (
@@ -61,7 +56,6 @@ const ProjectCard = ({ project, index }) => {
           </div>
         )}
 
-        {/* Links — always at bottom */}
         <div className={"mt-auto flex items-center justify-between gap-3 pt-2 border-t border-[#e5e7eb]"}>
           <a
             href={project.link}

@@ -8,7 +8,6 @@ const HeroSeaction =()=>{
     className={"relative min-h-screen w-full overflow-hidden flex items-center pt-25 md:pt-20 pb-12 px-4 sm:px-6 lg:px-8"}
   >
 
-    {/* ── Decorative Background Blobs ── */}
     <div
       className={"absolute top-20 -left-32 w-80 h-80 rounded-full opacity-20 blur-3xl pointer-events-none"}
       style={{ background: "linear-gradient(135deg,#6b9fff,#a78bfa)" }}
@@ -22,16 +21,10 @@ const HeroSeaction =()=>{
       style={{ background: "linear-gradient(135deg,#6b9fff,#f472b6)" }}
     />
 
-    {/* ── Main Grid ── */}
     <div className={"relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"}>
 
-      {/* ════ LEFT COLUMN — Text Content ════ */}
       <div className={"flex flex-col gap-6 animate-[fadeInUp_0.7s_ease_both]"}>
 
-        {/* Availability badge */}
-       
-
-        {/* Main Headline */}
         <div>
           <p className={"text-sm font-semibold text-[#6b9fff] tracking-widest mb-2"}>
             Hii There 👋, I&apos;m
@@ -49,16 +42,13 @@ const HeroSeaction =()=>{
           </h1>
         </div>
 
-        {/* Subtitle */}
         <p className={"text-[#4a4a6a] text-base sm:text-md leading-relaxed max-w-lg font-medium"}>
         I build modern, performant web applications with beautiful UI and
           clean, scalable code. Let&apos;s ship your next idea—from MVP to
           production.
         </p>
 
-        {/* CTA Buttons */}
         <div className={"flex flex-wrap items-center gap-4 mt-1"}>
-          {/* Primary — View Projects */}
           <a
             href="projects"
             className={"inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl                    text-sm font-bold text-white                   bg-gradient-to-r from-[#6b9fff] to-[#a78bfa]                   shadow-[0_8px_28px_rgba(107,159,255,0.42),inset_0_1px_0_rgba(255,255,255,0.25)]                   hover:-translate-y-1 hover:shadow-[0_14px_36px_rgba(107,159,255,0.52)]                   transition-all duration-200 ease-out cursor-pointer              "}
@@ -67,7 +57,6 @@ const HeroSeaction =()=>{
            <ArrowIcon />
           </a>
 
-          {/* Secondary — Download CV */}
           <a
             href={CV_URL}
             download="Raj_Odedara_Resume.pdf"
@@ -78,7 +67,6 @@ const HeroSeaction =()=>{
           </a>
         </div>
 
-        {/* Stats row */}
         <div className={"flex items-center gap-6 mt-2 pt-4 border-t border-[#e8eaf2]"}>
           {[
             { num: "1.5+", label: "Years Exp." },
@@ -93,15 +81,12 @@ const HeroSeaction =()=>{
         </div>
       </div>
 
-      {/* ════ RIGHT COLUMN — Illustration + Floating Cards ════ */}
       <div className={"relative flex items-center justify-center h-[500px] lg:h-[560px]"}>
 
-        {/* ── Center: Developer Avatar ── */}
         <div className={"animate-[floatY_5s_ease-in-out_infinite] [--floatY:1]"} style={{ animation: "floatY 5s ease-in-out infinite" }}>
           <DevAvatar />
         </div>
 
-        {/* ── Floating: Browser Card (top-left) ── */}
         <div
           className={"absolute top-4 left-0 lg:-left-8"}
           style={{ animation: "floatY2 6s ease-in-out infinite" }}
@@ -109,7 +94,6 @@ const HeroSeaction =()=>{
           <BrowserWindow />
         </div>
 
-        {/* ── Floating: Code Card (bottom-right) ── */}
         <div
           className={"absolute bottom-8 right-0 lg:-right-4"}
           style={{ animation: "floatY3 7s ease-in-out infinite" }}
@@ -117,7 +101,6 @@ const HeroSeaction =()=>{
           <CodeCard />
         </div>
 
-        {/* ── Floating: React Badge (top-right) ── */}
         <div
           className={"absolute top-10 right-4 lg:right-0"}
           style={{ animation: "floatRotate 8s ease-in-out infinite" }}
@@ -132,7 +115,6 @@ const HeroSeaction =()=>{
           </div>
         </div>
 
-        {/* ── Floating: MongoDB Badge (bottom-left) ── */}
         <div
           className={"absolute bottom-16 left-4 lg:-left-2"}
           style={{ animation: "floatY 9s ease-in-out infinite reverse" }}
@@ -148,8 +130,6 @@ Next.js
           </div>
         </div>
 
-        {/* ── Abstract clay shapes ── */}
-        {/* Purple shape */}
         <div
           className={"absolute top-1/2 right-[-16px] w-12 h-12 rounded-[40%_60%_30%_70%_/_50%_60%_40%_50%] opacity-60"}
           style={{
@@ -158,7 +138,6 @@ Next.js
             animation: "morphBlob 10s ease-in-out infinite, floatY2 7s ease-in-out infinite"
           }}
         />
-        {/* Blue shape */}
         <div
           className={"absolute top-28 left-1/2 w-8 h-8 rounded-full opacity-50"}
           style={{
@@ -170,7 +149,6 @@ Next.js
       </div>
     </div>
 
-    {/* ── Scroll arrow ── */}
     <div className={"absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-50"}>
       <span className={"text-[10px] font-medium text-[#4a4a6a] tracking-wider uppercase"}>Scroll</span>
      <ScrollArrow />

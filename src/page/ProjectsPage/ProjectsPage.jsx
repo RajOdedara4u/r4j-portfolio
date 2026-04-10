@@ -8,7 +8,6 @@ export default function ProjectsPage() {
       className={"relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-[#f8f9fc]"}
       
     >
-      {/* Decorative background similar to hero */}
       <div
         className={"pointer-events-none absolute inset-0 opacity-80"}
         style={{
@@ -21,7 +20,6 @@ export default function ProjectsPage() {
       />
 
       <div className={"relative pt-7 z-10 max-w-6xl mx-auto"}>
-        {/* Header */}
         <div className={"flex flex-col items-center text-center gap-4 mb-12"}>
 
           <h2 className={"text-3xl sm:text-4xl font-black tracking-tight text-[#1a1a2e]"}>
@@ -40,7 +38,6 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        {/* Projects Grid */}
         <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"}>
           {projectData.map((project, idx) => (
             <ProjectCard key={project.name} project={project} index={idx} />

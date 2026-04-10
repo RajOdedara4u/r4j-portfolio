@@ -112,7 +112,6 @@ const ServicesPage = () => {
       id="services"
       className={"relative w-full min-h-screen bg-[#f8f9fc] px-4 sm:px-6 lg:px-8 py-24"}
           >
-      {/* Soft background matching portfolio theme */}
       <div
         className={"pointer-events-none absolute inset-0 opacity-80"}
         style={{
@@ -125,7 +124,6 @@ const ServicesPage = () => {
       />
 
       <div className={"relative z-10 max-w-6xl mx-auto flex flex-col gap-16"}>
-        {/* Hero */}
         <header className={"flex flex-col items-center text-center gap-4"}>
           <span  data-aos="fade-up" className={"inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-white/70 text-xs font-semibold text-[#6b9fff] tracking-[0.2em] uppercase shadow-[0_4px_16px_rgba(107,159,255,0.12),inset_0_1px_0_rgba(255,255,255,1)]"}>
             Services I Offer
@@ -150,7 +148,6 @@ const ServicesPage = () => {
           </p>
         </header>
 
-        {/* Services Grid */}
         <section data-aos="fade-up"  className={"flex flex-col gap-8"}>
           <div className={"flex items-center justify-between gap-4 flex-wrap"}>
             <h2 className={"text-xl sm:text-2xl font-extrabold text-[#1a1a2e]"}>
@@ -170,18 +167,16 @@ const ServicesPage = () => {
                 data-aos="fade-up"
                 data-aos-delay={index * 70}
               >
-                {/* Icon */}
                 <div className={"inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#6b9fff]/15 via-[#a78bfa]/10 to-[#f472b6]/20 text-lg shadow-[0_10px_30px_rgba(107,159,255,0.25)] group-hover:scale-105 transition-transform duration-200"}>
                   <span>{service.icon}</span>
                 </div>
 
-                {/* Title + Label */}
                 <div className={"flex flex-col gap-1"}>
                   <div className={"flex items-center justify-between gap-3"}>
                     <h3 className={"text-base sm:text-lg font-extrabold text-[#1a1a2e]"}>
                       {service.title}
                     </h3>
-                    <span className={"text-[10px] font-semibold uppercase tracking-[0.18em] text-[#6b9fff] bg-[#eef2ff] px-2 py-1 rounded-full"}>
+                    <span className={"text-[9px] font-semibold uppercase tracking-[0.18em] text-[#6b9fff] bg-[#eef2ff] px-3 py-2 rounded-full"}>
                       {service.label}
                     </span>
                   </div>
@@ -190,7 +185,6 @@ const ServicesPage = () => {
                   </p>
                 </div>
 
-                {/* Points */}
                 <ul className={"mt-1 space-y-1.5 text-xs text-[#4a4a6a]"}>
                   {service.points.map((point) => (
                     <li
@@ -207,7 +201,6 @@ const ServicesPage = () => {
           </div>
         </section>
 
-        {/* Why Work With Me */}
         <section className={"flex flex-col gap-6"}>
           <div className={"flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3"}>
             <div>
@@ -239,13 +232,11 @@ const ServicesPage = () => {
           </div>
         </section>
 
-        {/* CTA */}
         <section
           className={"relative mt-4 rounded-3xl bg-gradient-to-r from-[#6b9fff] via-[#a78bfa] to-[#f472b6] px-6 sm:px-10 py-8 sm:py-10 overflow-hidden shadow-[0_22px_70px_rgba(56,96,255,0.55)]"}
           data-aos="zoom-in"
           data-aos-delay="120"
         >
-          {/* subtle overlay */}
           <div className={"pointer-events-none absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.8),transparent_55%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.5),transparent_55%)]"} />
 
           <div className={"relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6"}>

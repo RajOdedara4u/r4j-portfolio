@@ -3,7 +3,6 @@ import { CallIcon, EmailIcon, GitHubIcon, InstagramIcon, LinkedinIcon, XIcon, Yo
 const Footer = () => {
   return (
     <footer className={"relative mt-5 border-t border-[#e2e8f0] bg-[#f9fafb]"}>
-      {/* subtle gradient background to match hero/projects */}
       <div
         className={"pointer-events-none absolute inset-0 opacity-80"}
         style={{
@@ -16,7 +15,6 @@ const Footer = () => {
 
       <div className={"relative mx-auto w-full max-w-6xl px-4 sm:px-6 py-10 sm:py-12 lg:py-14"}>
         <div className={"flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between"}>
-          {/* Brand / short bio */}
           <div className={"max-w-sm"}>
             <div className={"inline-flex items-center gap-2 rounded-2xl bg-white/80 px-3 py-1 shadow-[0_6px_18px_rgba(148,163,184,0.35)] border border-white/80 mb-4"}>
               <span className={"h-2 w-2 rounded-full bg-[#4ade80]"} />
@@ -29,7 +27,6 @@ const Footer = () => {
             </h3>
           </div>
 
-          {/* Links columns */}
           <div className={"grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10 text-sm"}>
             <div>
               <h4 className={"mb-3 text-xs font-semibold tracking-[0.18em] uppercase text-[#94a3b8]"}>
@@ -119,7 +116,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* bottom bar */}
         <div className={"mt-8 border-t border-[#e2e8f0] pt-4 flex flex-col sm:flex-row items-center justify-between gap-3"}>
           <p className={"text-xs sm:text-sm text-[#94a3b8]"}>
             © 2026 Raj Odedara. All rights reserved.

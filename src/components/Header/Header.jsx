@@ -39,7 +39,6 @@ export default function Header() {
             : "shadow-[0_8px_28px_rgba(107,159,255,0.10),0_2px_8px_rgba(26,26,46,0.06)]"
         }`}
       >
-        {/* Status */}
         <div className={"flex items-center gap-2 text-xs font-semibold text-[#4a4a6a]"}>
           <span className={"relative flex h-2 w-2"}>
             <span className={"animate-ping absolute h-full w-full rounded-full bg-[#4ade80] opacity-75"} />
@@ -48,7 +47,6 @@ export default function Header() {
           Open to work
         </div>
 
-        {/* Desktop Navigation */}
         <ul className={"hidden md:flex items-center gap-7"}>
           {NAV_LINKS.map(({ label, href }) => (
             <li key={href}>
@@ -102,7 +100,6 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       <div
         className={`absolute top-[74px] left-4 right-4 bg-white rounded-[20px]
         shadow-[0_12px_40px_rgba(107,159,255,0.15)]

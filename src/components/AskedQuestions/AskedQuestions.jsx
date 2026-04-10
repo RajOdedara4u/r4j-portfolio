@@ -4,7 +4,7 @@ const AskedQuestions = () => {
       question:
         "How long does it take to deliver a pre-built application or website?",
       answer:
-        "We usually complete the entire pre-built application or website development within 25 days, including deployment, testing, and final handover.",
+        "We usually complete the entire pre-built application or website development within 14 days, including deployment, testing, and final handover.",
     },
     {
       question: "Do you provide the complete source code after development?",
@@ -31,7 +31,6 @@ const AskedQuestions = () => {
 
   return (
     <section className={"relative w-full py-16 px-4 sm:px-6 lg:px-8 bg-[#f8f9fc]"}>
-      {/* background glow to match theme */}
       <div
         className={"pointer-events-none absolute inset-0 opacity-80"}
         style={{
@@ -44,7 +43,6 @@ const AskedQuestions = () => {
       />
 
       <div className={"relative z-10 max-w-4xl mx-auto"}>
-        {/* header */}
         <div className={"mb-12 text-center flex flex-col items-center gap-3"}>
           <span className={"inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-white/70 text-xs font-semibold text-[#6b9fff] tracking-[0.2em] uppercase shadow-[0_4px_16px_rgba(107,159,255,0.12),inset_0_1px_0_rgba(255,255,255,1)]"}>
             FAQ
@@ -61,7 +59,6 @@ const AskedQuestions = () => {
           </p>
         </div>
 
-        {/* accordion list */}
         <div className={"space-y-4"}>
           {questions.map((item, index) => (
             <details
@@ -85,7 +82,6 @@ const AskedQuestions = () => {
                 </div>
               </summary>
 
-              {/* animated answer */}
               <div className={"px-4 sm:px-5 border-t border-[#e5e7eb] bg-[#f9fafb]/80 overflow-hidden"}>
                 <div className={"text-xs sm:text-[13px] text-[#4b5563] leading-relaxed transform transition-[max-height,opacity,transform,padding] duration-400 ease-[cubic-bezier(0.22,0.61,0.36,1)] max-h-0 opacity-0 translate-y-1 py-0 group-open:max-h-96 group-open:opacity-100 group-open:translate-y-0 group-open:py-3"}>
                   {item.answer}
