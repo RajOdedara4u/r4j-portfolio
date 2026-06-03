@@ -3,39 +3,22 @@ import ProjectCard from "./ProjectCard"
 
 export default function ProjectsPage() {
   return (
-    <section
-      id="projects"
-      className={"relative w-full py-20 px-4 sm:px-6 lg:px-8 bg-[#f8f9fc]"}
-      
-    >
-      <div
-        className={"pointer-events-none absolute inset-0 opacity-80"}
-        style={{
-          backgroundImage: `
-            radial-gradient(ellipse 70% 60% at 0% 0%, rgba(107,159,255,0.14) 0%, transparent 55%),
-            radial-gradient(ellipse 60% 50% at 100% 100%, rgba(167,139,250,0.12) 0%, transparent 55%),
-            radial-gradient(ellipse 50% 40% at 50% 10%, rgba(244,114,182,0.06) 0%, transparent 60%)
-          `,
-        }}
-      />
-
-      <div className={"relative pt-7 z-10 max-w-6xl mx-auto"}>
-        <div className={"flex flex-col items-center text-center gap-4 mb-12"}>
-
-          <h2 className={"text-3xl sm:text-4xl font-black tracking-tight text-[#1a1a2e]"}>
+        <div className={"relative z-10 max-w-[90%] mx-auto py-5 md:py-10"}>
+         <div className="text-center px-4" >
+          <h2 className="mt-1 text-[1.1rem] sm:text-[1.8rem] md:text-[2.2rem] font-black text-black leading-tight">
             Real-world{" "}
-            <span className={"bg-gradient-to-r from-[#6b9fff] via-[#a78bfa] to-[#f472b6] bg-clip-text text-transparent"}>
+            <span className="relative inline-block text-[var(--text-red)]">
               Projects
+              <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 180 8" preserveAspectRatio="none" style={{ height: "7px" }}>
+                <path d="M0,6 Q45,0 90,5 Q135,10 180,3" stroke="#a78bfa" strokeWidth="3" fill="none" strokeLinecap="round" />
+              </svg>
             </span>
           </h2>
-
-          <p className={"max-w-2xl text-sm sm:text-base text-[#4a4a6a] font-medium"}>
-            A curated collection of applications I&apos;ve designed and
-            developed — from{" "}
-            <span className={"text-[#6b9fff] font-semibold"}>client projects</span>{" "}
-            to <span className={"text-[#a78bfa] font-semibold"}>personal builds</span>.
-            Each one focuses on clean UI, performance, and real business value.
-          </p>
+          <p className="mt-3 text-[0.7rem] sm:text-[0.8rem] md:text-[0.9rem] max-w-lg text-[var(--text-secondary)] text-sm sm:text-base mx-auto">
+          A curated collection of applications I've designed and developed — from client projects to personal builds. Each one focuses on clean UI, Performance</p>
+          <div
+            className="mx-auto mt-5 mb-5 h-1 w-16 rounded-full bg-[#a78bfa]"
+          />
         </div>
 
         <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"}>
@@ -44,6 +27,5 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
-    </section>
   );
 }

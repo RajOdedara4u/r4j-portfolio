@@ -1,9 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
-html,
-body {
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #a78bfa;
+
+  --text-primary: #ffffff;
+  --text-secondary: #5F5F5F;
+  --text-red: #a78bfa;
+}
+
+html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--text-secondary);
+  overflow-x: hidden;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+
+.tron-grid {
+  background-image:
+    linear-gradient(rgba(107,159,255,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107,159,255,0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.tron-divider {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #6b9fff 30%, #a78bfa 60%, #f472b6 80%, transparent 100%);
+  box-shadow: 0 0 12px rgba(107,159,255,0.6), 0 0 28px rgba(167,139,250,0.4);
+}
+.tron-divider::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 16px 6px rgba(167,139,250,0.7);
+}
+@keyframes blobMorph {
+  0%   { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  25%  { border-radius: 40% 60% 55% 45% / 50% 60% 40% 60%; }
+  50%  { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  75%  { border-radius: 55% 45% 40% 60% / 40% 55% 60% 45%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+.blob-morph {
+  animation: blobMorph 10s ease-in-out infinite;
+}
+
+@keyframes tronPulse {
+  0%, 100% { opacity: 0.5; box-shadow: 0 0 8px rgba(107,159,255,0.4); }
+  50%       { opacity: 1;   box-shadow: 0 0 24px rgba(107,159,255,0.9); }
+}
+.tron-pulse { animation: tronPulse 3s ease-in-out infinite; }
+
+@keyframes scanLine {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100vw); }
+}
+.scan-line {
+  position: absolute;
+  top: 0; left: 0;
+  width: 120px; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(107,159,255,0.15), transparent);
+  animation: scanLine 6s linear infinite;
+  pointer-events: none;
 }
 
 @keyframes floatY {

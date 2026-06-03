@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components";
-import { Footer } from "@/components";
+import { Header, Footer, FloatingWhatsApp } from "@/components";
 import AOSProvider from "@/components/AOSProvider/AOSProvider";
 const inter = Inter({
   subsets: ["latin"],
@@ -24,12 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} font-sans antialiased bg-[#f8f9fc] text-[#1a1a2e]`}
+        className={`${inter.variable} font-sans antialiased text-[#1a1a2e]`}
       >
         <AOSProvider>
           <Header />
           {children}
           <Footer />
+          <FloatingWhatsApp />
         </AOSProvider>
       </body>
     </html>

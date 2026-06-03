@@ -1,87 +1,120 @@
-import { ArrowIcon, ArrowIcon2, CodeIcon } from "@/components/Icons/Icons";
+"use client";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import { ArrowUpRight } from "lucide-react";
+import { GitHubIcon } from "@/components/Icons/Icons";
 import Image from "next/image";
-const ProjectCard = ({ project, index }) => {
-  return (
-    <article
-      key={project.name}
-      className={"group relative flex flex-col overflow-hidden rounded-3xl bg-white border border-white/80 shadow-[0_14px_40px_rgba(15,23,42,0.06),0_4px_16px_rgba(148,163,184,0.18)] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(15,23,42,0.10)] transition-all duration-200 h-full"}
-      data-aos="fade-up"
-    >
-      <div className={"relative h-44 sm:h-48 shrink-0 overflow-hidden"}>
-        <div className={"absolute inset-0 bg-gradient-to-br from-[#6b9fff]/20 via-transparent to-[#f472b6]/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300"} />
-        <Image src={project.img} alt={project.name} fill className="object-cover" />
 
-        <div className={"absolute top-3 right-3 flex items-center gap-2 px-3 py-1.5 rounded-2xl bg-black/60 backdrop-blur text-[11px] font-semibold text-white"}>
-          <span className={"inline-block h-1.5 w-1.5 rounded-full bg-[#4ade80]"} />
-          Live Project
+const ProjectCard = ({ project, index }) => {
+  const [hovered, setHovered] = useState(false);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-60px" });
+
+  const techs = project.techonology.split(",").map((t) => t.trim()).filter(Boolean);
+
+  return (
+    <motion.article
+      ref={ref}
+      initial={{ opacity: 0, y: 32 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay: (index % 3) * 0.09, ease: [0.22, 1, 0.36, 1] }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        background: "#fff",
+        borderRadius: 16,
+        boxShadow: hovered
+          ? "0 20px 44px rgba(167,139,250,0.17)"
+          : "0 2px 12px rgba(167,139,250,0.08)",
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        position: "relative",
+
+        transition: "transform 0.35s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s",
+        transform: hovered ? "translateY(-6px)" : "translateY(0)",
+        cursor: "pointer",
+      }}
+    >
+      {/* Image */}
+      <div style={{ position: "relative", height: 200, borderRadius: "16px 16px 0 0", overflow: "hidden", flexShrink: 0 }}>
+        <div style={{ position: "absolute", inset: 0, overflow: "hidden", transition: "transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94)", transform: hovered ? "scale(1.07)" : "scale(1.01)" }}>
+          <Image src={project.img} alt={project.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
         </div>
+
+
+        {/* Live badge */}
+        <span className="absolute top-[10px] left-3 text-[9px] tracking-[0.16em] uppercase text-white bg-[#a78bfa] border border-[rgba(196,168,130,0.55)] px-2 py-[3px] rounded-full font-medium flex items-center gap-1">
+          <span className="w-[5px] h-[5px] rounded-full bg-[#4ade80] inline-block" />
+          Live
+        </span>
+
       </div>
 
-      <div className={"flex flex-1 flex-col gap-4 p-4 sm:p-5 min-h-0"}>
-        <div className={"min-h-0"}>
-          <h3 className={"text-base sm:text-lg font-extrabold text-[#1a1a2e] mb-1"}>
-            {project.name}
-          </h3>
-          <p className={"text-xs sm:text-sm text-[#4a4a6a] leading-relaxed"}>
-            {project.desc}
-          </p>
-        </div>
+      {/* Content */}
+      <div style={{ padding: "26px 0 0", display: "flex", flexDirection: "column", flex: 1 }}>
+      <div className="px-4 flex-1">
+        <h3 className="text-[17px] font-bold text-black leading-[1.2] mb-[6px]">
+          {project.name}
+        </h3>
 
-        <div className={"flex flex-wrap gap-1.5"}>
-          {project.techonology
-            .split(",")
-            .map((tech) => tech.trim())
-            .filter(Boolean)
-            .map((tech) => (
-              <span
-                key={tech}
-                className={"inline-flex items-center px-2 py-1 rounded-full text-[10px] font-semibold text-[#1a1a2e] bg-[#eef2ff] border border-[#e0e7ff]"}
-              >
-                {tech}
-              </span>
-            ))}
-        </div>
+        <p className="text-[12px] text-black/70 leading-[1.55] font-light mb-[10px]">
+          {project.desc}
+        </p>
 
-        {project.topic && project.topic.length > 0 && (
-          <div className={"flex flex-wrap gap-1.5"}>
-            {project.topic.map((item) => (
-              <span
-                key={item}
-                className={"inline-flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-medium text-[#4a4a6a] bg-[#f8fafc] border border-[#e2e8f0]"}
-              >
-                <span className={"h-1 w-1 rounded-full bg-[#6b9fff]"} />
-                {item}
-              </span>
-            ))}
-          </div>
-        )}
-
-        <div className={"mt-auto flex items-center justify-between gap-3 pt-2 border-t border-[#e5e7eb]"}>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className={"inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-[#1a1a2e] group-hover:text-[#6b9fff] transition-colors"}
-          >
-            View Live
-            <span className={"inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#6b9fff]/10 text-[#6b9fff] p-[3px] group-hover:bg-[#6b9fff] group-hover:text-white transition-colors"}>
-             <ArrowIcon2 />
+        {/* Tech tags */}
+        <div className="flex flex-wrap gap-[5px] mb-[10px]">
+          {techs.slice(0, 5).map((tech) => (
+            <span key={tech} className="inline-flex items-center px-[7px] py-[2px] rounded-full text-[10px] font-semibold text-[#a78bfa]/80 border border-black/20">
+              {tech}
             </span>
-          </a>
+          ))}
+          {techs.length > 5 && (
+            <span className="inline-flex items-center px-[7px] py-[2px] rounded-full text-[9px] font-semibold text-black/40 bg-[#f8fafc] border border-[#e2e8f0]">
+              +{techs.length - 5}
+            </span>
+          )}
+        </div>
 
+        {/* Topics */}
+        {project.topic?.length > 0 && (
+          <ul className="list-none p-0 grid grid-cols-2 gap-y-[5px] gap-x-2 mb-[10px] flex-1">
+            {project.topic.map((item) => (
+              <li key={item} className="flex items-center gap-[5px] text-[11px] text-black/70">
+                <span className="w-[3px] h-[3px] rounded-full bg-[#a78bfa] flex-shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+       </div>
+
+        <div className="flex items-center justify-between bg-[#a78bfa]/40 px-4 py-3">
           <a
             href={project.codeLink}
             target="_blank"
             rel="noreferrer"
-            className={"inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold text-[#4a4a6a] hover:text-[#a78bfa] transition-colors"}
+            onClick={(e) => e.stopPropagation()}
+            className="flex items-center gap-[5px] text-[10px] font-medium tracking-[0.08em] text-black/70 hover:text-[#a78bfa] border border-black/30 bg-white px-2 py-1 rounded-full transition-colors"
           >
-            View Code
-           <CodeIcon />
+            <GitHubIcon size={12} strokeWidth={1.8} />
+            Code
+          </a>
+
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="flex text-black/70 hover:text-[#a78bfa] bg-white/90 border border-black/30 px-2 py-1 rounded-full items-center gap-[5px] text-[10px] font-medium tracking-[0.12em] uppercase text-[#a78bfa]"
+          >
+              <ArrowUpRight size={13} strokeWidth={2} />
+              Live
           </a>
         </div>
       </div>
-    </article>
-  )
-}
+    </motion.article>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

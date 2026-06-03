@@ -13,6 +13,19 @@ const projectData = [
     link: "https://shoes-site-ui.netlify.app",
     techonology: "React, Redux, Tailwind, Animations",
   },
+   {
+    img: "/p5.png",
+    name: "Travel Agency Website",
+    desc: "Developed and maintaing a travel agency website with created in next js.",
+    topic: [
+      "Explore Bus Fleets",
+      "Services Offered",
+      "Animations",
+    ],
+    codeLink: "https://github.com/RajOdedara4u/Dhananjay-Travels",
+    link: "https://dhananjay-travels.netlify.app/",
+    techonology: "Next, Tailwind, Motion",
+  },
   {
     img: "/p1.png",
     name: "Ecommerce Library BookStore",
@@ -28,33 +41,15 @@ const projectData = [
     techonology:
       "MERN, Zod, BcryptJS, JWT, Redux, Tailwind,Google Auth, Razor Pay",
   },
-
-  {
-    img: "/p2.jpg",
-    name: "Sindhal Finance Site",
-    desc: "Landing + lead collection platform built for a finance startup to capture user data and run ad campaigns.",
-    topic: ["Login / Signup", "Animations", "Admin Dashboard"],
-    link: "https://sindhal-finance.netlify.app/",
-    codeLink: "https://github.com/RajOdedara4u/Sindhal-Finance-Site",
-    techonology: "MERN, JWT, AOS, Tailwind",
-  },
- 
-  {
-    img: "/p5.png",
-    name: "Kirtilals : Luxury Website",
-    desc: "Modern online store for Buissness Owner.",
-    topic: [
-      "Premium diamond-jewellery store",
-      "1,500+ certified designs",
-      "Integrated filters",
-      "Mobile-first responsive checkout",
-    ],
-    codeLink: "https://github.com/RajOdedara4u/Kirtilals-Luxury-Website",
-    link: "https://www.kirtilals.com/",
-    techonology: "Next.js, Tailwind, Sanity, React Query, React Hook Form, React Icons, React Toastify",
-  },
-
    {
+    img: "/p9.png",
+    name: "Cafe Website",
+    desc: "responsive website for a cafe built with Next.js and Tailwind CSS.",
+    topic: ["Next.js", "Animation,Responsive Design"],
+    codeLink: "https://github.com/RajOdedara4u/Cafe-Website",
+    link: "https://youtu.be/_3GBpIbgaFM?si=F5TPyzwlvB1aBJlL",
+    techonology: "Next.js, Animation, Responsive Design",
+  },   {
     img: "/p3.jpg",
     name: "Folk Singer Website",
     desc: "Personal brand website for a folk singer to showcase performances, bio, and contact details.",
@@ -81,8 +76,6 @@ const projectData = [
     link: "https://murzban.in/",
     techonology: "Next.js, Tailwind, Sanity, React Query, React Hook Form, React Icons, React Toastify",
   },
- 
-
   {
     img: "/p6.jpg",
     name: "Dashboard – Figma to Code",
@@ -92,7 +85,6 @@ const projectData = [
     codeLink: "https://github.com/RajOdedara4u/dahsboardTask",
     techonology: "HTML, CSS",
   },
-
   {
     img: "/p8.jpg",
     name: "UsabilityHub Clone",
@@ -105,16 +97,15 @@ const projectData = [
     link: "https://site1-clone.netlify.app",
     techonology: "HTML, CSS",
   },
-  {
-    img: "/p9.png",
-    name: "Cafe Website",
-    desc: "responsive website for a cafe built with Next.js and Tailwind CSS.",
-    topic: ["Next.js", "Animation,Responsive Design"],
-    codeLink: "https://github.com/RajOdedara4u/Cafe-Website",
-    link: "https://youtu.be/_3GBpIbgaFM?si=F5TPyzwlvB1aBJlL",
-    techonology: "Next.js, Animation, Responsive Design",
+    {
+    img: "/p2.jpg",
+    name: "Sindhal Finance Site",
+    desc: "Landing + lead collection platform built for a finance startup to capture user data and run ad campaigns.",
+    topic: ["Login / Signup", "Animations", "Admin Dashboard"],
+    link: "https://sindhal-finance.netlify.app/",
+    codeLink: "https://github.com/RajOdedara4u/Sindhal-Finance-Site",
+    techonology: "MERN, JWT, AOS, Tailwind",
   },
-
-];
+  ];
 
 export default projectData

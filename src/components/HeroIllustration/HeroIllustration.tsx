@@ -2,12 +2,9 @@
 
 import Image from "next/image";
 
-/* ─────────────────────────────────────────────
-   Clay Floating Card — mini UI preview window
-───────────────────────────────────────────── */
 const BrowserWindow = () => (
   <div
-    className={"      bg-white rounded-[22px] p-3 w-52      shadow-[0_14px_40px_rgba(107,159,255,0.18),0_4px_12px_rgba(26,26,46,0.08),inset_0_1px_0_rgba(255,255,255,1)]     border border-white/60    "}
+    className={" bg-white rounded-[22px] p-3 w-52      shadow-[0_14px_40px_rgba(107,159,255,0.18),0_4px_12px_rgba(26,26,46,0.08),inset_0_1px_0_rgba(255,255,255,1)]     border border-white/60    "}
   >
     <div className={"flex items-center gap-1.5 mb-2.5"}>
       <span className={"w-2.5 h-2.5 rounded-full bg-[#ff6b6b] shadow-sm"} />
@@ -45,15 +42,6 @@ const CodeCard = () => (
   </div>
 );
 
-const TechBadge = ({ icon, label, color }: { icon: string; label: string; color: string }) => (
-  <div
-    className={"      flex items-center gap-2 px-3 py-2 rounded-2xl bg-white      shadow-[0_6px_20px_rgba(107,159,255,0.12),0_2px_8px_rgba(26,26,46,0.06),inset_0_1px_0_rgba(255,255,255,1)]      border border-white/60 text-xs font-semibold text-[#1a1a2e]    "}
-  >
-    <span className={"text-base"}>{icon}</span>
-    <span style={{ color }}>{label}</span>
-  </div>
-);
-
 const DevAvatar = () => (
   <div className={"relative flex items-center justify-center"}>
     <div
@@ -72,6 +60,7 @@ const DevAvatar = () => (
         alt="Raj Odedara"
         fill
         priority
+        sizes="(max-width: 640px) 200px, 256px"
         className={"object-cover"}
       />
 
@@ -86,4 +75,4 @@ const DevAvatar = () => (
   </div>
 );
 
-export { BrowserWindow, CodeCard, TechBadge, DevAvatar };
+export { BrowserWindow, CodeCard, DevAvatar };

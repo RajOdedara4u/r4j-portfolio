@@ -1,4 +1,5 @@
-import { ReactIcon ,MongoIcon ,NextIcon,PostmanIcon, GitHubIcon ,TailwindIcon, ReduxIcon, NodeIcon ,ExpressIcon ,PostgresIcon ,TypeScriptIcon } from "../Icons/Icons";
+"use client";
+import { ReactIcon ,MongoIcon ,NextIcon,PostmanIcon, GitHubIcon ,TailwindIcon, ReduxIcon, NodeIcon ,ExpressIcon ,PostgresIcon ,TypeScriptIcon } from "../../../components/Icons/Icons";
 
 const TECH_ITEMS = [
   { label: "React", type: "core", Icon: ReactIcon },
@@ -16,45 +17,30 @@ const TECH_ITEMS = [
 
 const TechStack = () => {
   return (
-    <section
-     data-aos="fade-up"
-      id="tech"
-      className={"relative w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#f8f9fc]"}
-    >
-      <div
-        className={"pointer-events-none absolute inset-0 opacity-80"}
-        style={{
-          backgroundImage: `
-            radial-gradient(ellipse 70% 60% at 0% 0%, rgba(107,159,255,0.12) 0%, transparent 55%),
-            radial-gradient(ellipse 60% 50% at 100% 100%, rgba(167,139,250,0.10) 0%, transparent 55%),
-            radial-gradient(ellipse 50% 40% at 50% 10%, rgba(244,114,182,0.05) 0%, transparent 60%)
-          `,
-        }}
-      />
-
-      <div className={"relative z-10 max-w-6xl mx-auto"}>
-        <div className={"flex flex-col items-center text-center gap-3 mb-10"}>
-          <span className={"inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-white/70 text-xs font-semibold text-[#6b9fff] tracking-[0.2em] uppercase shadow-[0_4px_16px_rgba(107,159,255,0.12),inset_0_1px_0_rgba(255,255,255,1)]"}>
-            Tech Stack
-          </span>
-          <h2 className={"text-2xl sm:text-3xl font-black tracking-tight text-[#0f172a]"}>
-            Tools I{" "}
-            <span className={"bg-gradient-to-r from-[#6b9fff] via-[#a78bfa] to-[#f472b6] bg-clip-text text-transparent"}>
-              build with
+      <div className={"relative z-10 max-w-[90%] mx-auto py-5 md:py-10 sm:px-6 lg:px-8"}>
+    <div className="text-center px-4" >
+          <h2 className="mt-1 text-[1.1rem] sm:text-[1.8rem] md:text-[2.2rem] font-black text-black leading-tight">
+                Tools I{" "}
+            <span className="relative inline-block text-[var(--text-red)]">
+                build with
+              <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 180 8" preserveAspectRatio="none" style={{ height: "7px" }}>
+                <path d="M0,6 Q45,0 90,5 Q135,10 180,3" stroke="#a78bfa" strokeWidth="3" fill="none" strokeLinecap="round" />
+              </svg>
             </span>
           </h2>
-          <p className={"max-w-2xl text-sm sm:text-base text-[#4a4a6a] font-medium"}>
-            A carefully selected set of technologies I use every day to ship
-            fast, scalable and visually polished web applications.
-          </p>
+          <p className="mt-3 text-[0.7rem] sm:text-[0.8rem] md:text-[0.9rem] max-w-lg text-[var(--text-secondary)] text-sm sm:text-base mx-auto">
+          A carefully selected set of technologies I use every day to ship fast, scalable and visually polished web applications.  </p>
+          <div
+            className="mx-auto mt-5 mb-5 h-1 w-16 rounded-full bg-[#a78bfa]"
+          />
         </div>
-
         <div className={"grid gap-4 sm:gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"}>
           {TECH_ITEMS.map((item, index) => {
             const Icon = item.Icon;
             return (
               <div
                data-aos="fade-up"
+               suppressHydrationWarning
                 key={item.label}
                 className={"group relative overflow-hidden rounded-2xl bg-white/95 border border-white/80 shadow-[0_10px_30px_rgba(15,23,42,0.06)] px-3.5 py-3 sm:px-4 sm:py-4 flex items-center gap-3 sm:gap-3.5 transition-transform duration-200 hover:-translate-y-1"}
                 style={{
@@ -80,7 +66,6 @@ const TechStack = () => {
           })}
         </div>
       </div>
-    </section>
   );
 };
 
